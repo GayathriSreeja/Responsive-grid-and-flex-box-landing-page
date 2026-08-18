@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Grid landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    .attribution { font-size: 11px; text-align: center;background-color: hsl(228, 100%, 60%);color: white;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container{
+    display:grid;
+    grid-template-columns:45% 55%;
+    background-color: hsl(228, 100%, 60%);
+    padding:0px;
+    border: 1px solid white;
+    color: white;
+   
+    }
+    html,body{
+      height:100%;
+    }
+  body{
+  height:100%;
+  margin:0;
+    background-color: hsl(228, 100%, 60%);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  min-height: 100%;
+
+    }
+  
+    .container2{
+      display:grid;
+      grid-template-columns:50% 50%;
+      height:75vh;
+      background-color: hsl(228, 100%, 60%);
+      border: 0.2px solid white;
+
+
+    }
+
+    .outer{
+      display:grid;
+      grid-template-rows:50% 50%;
+      padding: 10px;
+      border: 0.2px solid white;
+    }
+   
+    .top{
+      display:grid;
+      grid-template-columns:50% 50%;
+
+    }
+    .stats-text{
+      text-align: left;
+      font-weight: bold;
+      
+    }
+    .top p{
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      font-size: 30px;
+      margin: 0px;
+    }
+    .hero{
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 100px;
+    }
+    .hero-text{
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .hero-subtext{
+      font-size: 15px;
+      padding-top: 20px;
+      font-weight: 150;
+    }
+    header{
+      display:flex;
+      justify-content: space-between;
+      background-color: hsl(228, 100%, 60%);
+      color: white;
+      padding: 10px;
+    }
+    footer{
+      display:flex;
+      justify-content: space-between;
+      background-color: hsl(228, 100%, 60%);
+      color: white;
+    }
+   
+    .stats-subtext{
+      font-size: 12px;
+      padding-top: 10px;
+      font-weight: 150;
+
+    }
+    .empty{
+      grid-row:1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+
+  <header>
+    Bridge Collective
+    <a href="" title="hamburger icons"><img src="assets\images\icon-menu.svg" alt="Hamburger icon"></a>
+  </header>
+
+  <div class="container">
+<div class="empty">
+  <!-- Hero -->
+  <div class="hero">
+  <div class="hero-text"> 
+   A classroom for every child.
+  </div>
+ <div class="hero-subtext">
+  We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+ </div> 
+  </div>
+</div>
+
+<div class="container2">
+<div class="outer">
+  <!-- Stats -->
+  <div class="top">
+    <img src="assets/images/icon-sparkle.svg" alt="Sparkle icon">
+  <p>2.4M</p>
+  </div>
+  <div class="stats-text">
+  Students reached
+  <div class="stats-subtext">
+  Across 31 countries since 2011.
+  </div>
+  </div>
+</div>
+
+  <div class="outer">
+  <div class="top">
+  <img src="assets/images/icon-plus.svg" alt="plus icon">
+  <p>1,284</p>
+  </div>
+  <div class="stats-text">
+  Schools partnered
+  <div class="stats-subtext">
+  In 14 countries, from Kenya to Guatemala.
+  </div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="top">
+    <img src="assets/images/icon-arrow-right.svg" alt="plus icon">
+  <p>38K</p>
+  </div>
+  <div class="stats-text">
+  Teachers trained
+  <div class="stats-subtext">
+  Equipped with modern tools and methodology.
+  </div>
+  </div>
+</div>
+
+<div class="outer">
+  <div class="top">
+    <img src="assets/images/icon-trending-up.svg" alt="plus icon">
+  <p>3.1×</p>
+  </div>
+  <div class="stats-text">
+  Graduation lift
+  <div class="stats-subtext">
+  Partner schools outperform national averages 3x.
+  </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <footer>
+ <p> © 2026 Bridge Collective</p>
+  <p>Registered charity 12345678</p>
+  </footer>
+  
+
+  <!-- Menu panel — hidden until the hamburger is activated -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="#">Gayathri Sreeja</a>.
+  </div>
+</body>
+</html>
